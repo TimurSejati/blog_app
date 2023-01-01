@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    namae: {
+    name: {
       type: String,
       required: [true, "Pleas add your name"],
       trim: true,

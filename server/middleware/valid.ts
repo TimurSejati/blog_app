@@ -11,7 +11,7 @@ export const validRegister = async (
 
   if (!name) {
     errors.push("Please add your name");
-  } else if (/^[+]/g.test(account)) {
+  } else if (name.length > 20) {
     errors.push("Your name is up to 20 chars long");
   }
 
